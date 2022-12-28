@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+}
+.piano-container {
+  background-color: #000;
+  height: 98vh;
+}
+
+.piano-wrapper {
+  width: 420px;
+  height: 200px;
+  background-color: #000;
+  column-gap: 0.3em;
+  transform: rotate(90deg);
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.piano-keys {
+  width: 52px;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+.piano-black {
+  width: 85%;
+  height: 60%;
+  background-color: #000;
+  position: absolute;
+  left: 1.79em;
+  z-index: 10;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+.center {
+  left: 1.61em;
+}
+.left {
+  left: 1.6em;
+}
+@media screen and (min-width: 340px) {
+  .piano-wrapper {
+    width: 600px;
+    height: 200px;
+  }
+  .piano-black {
+    left: 2.29em;
+  }
+  .center {
+    left: 2.19em;
+  }
+  .left {
+    left: 2.2em;
+  }
+}
+.grey-color {
+  background-color: rgb(48, 48, 81);
+}
+
+@media screen and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+  }
+  /* .piano-wrapper {
+    transform: rotate(360deg);
+  }
+  .flex {
+    justify-content: center;
+  } */
+}
